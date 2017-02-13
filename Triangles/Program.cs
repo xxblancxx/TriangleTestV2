@@ -10,11 +10,11 @@ namespace Triangles
     {
         static void Main(string[] args)
         {
-            //    Test Cases: Successful
-            //Triangle1: SideA: 5 SideB: 5 SideC: 5  Result: equilateral
-            //Triangle2:  SideA: 3 SideB: 10 SideC: 3 Result: isosceles
-            //Triangle3:  SideA: 5 SideB: 6 SideC: 1  Result: scalene
-            //Triangle4:  SideA: 1,5 SideB: 2 SideC: 1  Result: scalene
+            //    Test Cases: Successful.
+            //Triangle1: SideA: 5 SideB: 5 SideC: 5  Result: equilateral.
+            //Triangle2:  SideA: 3 SideB: 10 SideC: 3 Result: isosceles.
+            //Triangle3:  SideA: 5 SideB: 6 SideC: 1  Result: scalene.
+            //Triangle4:  SideA: 1,5 SideB: 2 SideC: 1  Result: scalene.
 
             var triangle1 = new Triangle(5,5,5);
             CompareExpectation("equilateral",triangle1.GetTriangleType());
