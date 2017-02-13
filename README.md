@@ -1,3 +1,41 @@
+# Static Testing
+
+#####Check of Code Conventions in my code.
+*Changelog*
+
+<pre>
+- Added dots at the end of comments.
+- Capitalized some of the comments.
+- Added exception handling, for values outside of scope. (Negative or 0 length for sides).
+- Removed instance field _type in Triangle. Ended up not using it.
+</pre>
+
+#####Result of Calculated Code Metrics Analysis.
+
+<pre>
+Project: Triangles
+Configuration: Debug
+Scope: Project
+Assembly: C:\...\Projects\Triangles\Triangles\bin\Debug\Triangles.exe
+Maintainability Index: 77
+Cyclomatic Complexity: 20
+Depth of Inheritance: 1
+Class Coupling: 3
+Lines of Code: 32
+</pre>
+
+##### Code Standard Documentation
+<pre>
+> Generally follow Microsoft Coding Conventions for C#:
+https://msdn.microsoft.com/en-us/library/ff926074.aspx
+
+<i>Most importantly follow Naming and Layout Conventions</i>
+</pre>
+
+
+
+>Below is original Readme before revisions
+
 # Test Cases (on paper)
 
 ## Test cases for Triangles. 
