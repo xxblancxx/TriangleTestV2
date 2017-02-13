@@ -13,7 +13,14 @@ namespace Triangles
         public double SideC { get; set; }
         private string _type;
 
-        public string GetType()
+        public Triangle(double a, double b, double c)
+        {
+            SideA = a;
+            SideB = b;
+            SideC = c;
+        }
+
+        public string GetTriangleType()
         {
             // Returns whether the triangle is scalene, isosceles or equilateral
             //scalene(ingen ens sider): No sides equal length
