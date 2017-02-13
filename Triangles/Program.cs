@@ -15,18 +15,26 @@ namespace Triangles
             //Triangle2:  SideA: 3 SideB: 10 SideC: 3 Result: isosceles.
             //Triangle3:  SideA: 5 SideB: 6 SideC: 1  Result: scalene.
             //Triangle4:  SideA: 1,5 SideB: 2 SideC: 1  Result: scalene.
+            try
+            {
+                var triangle1 = new Triangle(5, 5, 5);
+                var triangle2 = new Triangle(3, 10, 3);
+                var triangle3 = new Triangle(5, 6, 1);
+                var triangle4 = new Triangle(1.5, 2, 1);
 
-            var triangle1 = new Triangle(5,5,5);
-            CompareExpectation("equilateral",triangle1.GetTriangleType());
+                CompareExpectation("equilateral", triangle1.GetTriangleType());
 
-            var triangle2 = new Triangle(3,10,3);
-            CompareExpectation("isosceles", triangle2.GetTriangleType());
+                CompareExpectation("isosceles", triangle2.GetTriangleType());
 
-            var triangle3 = new Triangle(5,6,1);
-            CompareExpectation("scalene", triangle3.GetTriangleType());
-            var triangle4 = new Triangle(1.5,2,1);
-            CompareExpectation("scalene", triangle4.GetTriangleType());
+                CompareExpectation("scalene", triangle3.GetTriangleType());
 
+                CompareExpectation("scalene", triangle4.GetTriangleType());
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
         }
 
         public static void CompareExpectation(string expected, string result)
