@@ -24,9 +24,27 @@ Class Coupling: 3
 Lines of Code: 32
 </pre>
 
+####Søren's Review
+<pre>
+<b>Review of Martin’s code</b>
+<i>Nice, readable and well commented.</i>
+
+<b>Triangle (5D, 5D, 5)</b>
+<i>I was able to create a triangle with the sides 5D, 5D & 5, thinking this have to do with using doubles in
+order to have decimal numbered sides.
+I’m not sure it’s an issue, but I thought I’d mention it. A person without programming experience might
+get confused by it.</i>
+<b>Redundant else-statements</b>
+<i>- In GetTriangleType() each statement contains a return, meaning that boolean true would would exit the
+method. Since the method ends upon entering the proper bool, there’s no need for else if/else, and it
+could be made to if instead.</i>
+<b>No readline?</b>
+<i>You ask much of me to click ctrl + F5 and run it without debugger for it not to close, too much good sir!</i>
+</pre>
+
 ##### Code Standard Documentation
 <pre>
-> Generally follow Microsoft Coding Conventions for C#:
+Generally follow Microsoft Coding Conventions for C#:
 https://msdn.microsoft.com/en-us/library/ff926074.aspx
 
 <i>Most importantly follow Naming and Layout Conventions</i>
